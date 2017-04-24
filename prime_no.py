@@ -9,10 +9,16 @@ def is_prime(n):
             return False
     return True
 
+primeList = []
+nonPrimeList = []
 for i in range(100):
     primeNo = is_prime(i)
     if primeNo == True:
-        print "%d is a Prime no" % i
+        primeList.append(i)
+        
     else:
-        print "%d is not a Prime no" % i
+        nonPrimeList.append(i)
+        
 
+print "Prime numbers between 0 to 100 are: ", primeList
+print "Non Prime numbers between 0 to 100 are: ", nonPrimeList
