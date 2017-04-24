@@ -15,7 +15,6 @@ for i in range(100):
     primeNo = is_prime(i)
     if primeNo == True:
         primeList.append(i)
-        
     else:
         nonPrimeList.append(i)
         
